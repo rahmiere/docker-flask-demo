@@ -1,0 +1,16 @@
+version: "2"
+authtoken: [INSERT_AUTH_TOKEN_HERE]
+
+log_level: info
+log_format: json
+log: /app/ngrok.log
+
+tunnels:
+  website:
+    addr: web:5000
+    schemes:
+      - https
+    host_header: "insert_domain_here"
+    inspect: false
+    proto: http
+    domain: [INSERT_DOMAIN_HERE]

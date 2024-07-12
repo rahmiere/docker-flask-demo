@@ -12,7 +12,7 @@ services:
       - "/etc/ngrok.yml"
     volumes:
       - ./ngrok.yml:/etc/ngrok.yml
-      - ./ngrok.log:/app/ngrok.log
+      - ./logs/ngrok.log:/app/ngrok.log
     ports:
       - 4040:4040
 
